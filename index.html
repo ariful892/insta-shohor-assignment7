@@ -65,13 +65,19 @@
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne">
-                        * How does javascript work?
+                        * What is the difference between local storage and session storage?
                     </button>
                 </h2>
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                     aria-labelledby="panelsStayOpen-headingOne">
                     <div class="accordion-body">
-                        Javascript works
+                        Local storage and Session storage both are used to store data in web browser. The data stored as
+                        a key-value pair of string. The main difference between local storage and session storage is
+                        session storage stored the data temporarily whereas local storage stored the data permanently.
+                        If a user open a tab in the browser and after finishing the task close the tab then the data
+                        stored in the session storage will be lost. But the data stored in local storage will still
+                        remain in the storage after closing the tab even after closing the browser it will remain there.
+                        And also Local storage has higher memory capacity than session storage.
                     </div>
                 </div>
             </div>
@@ -95,8 +101,6 @@
                         back to the asynchronous statement that is stored in the queue then it is immediately pushed
                         into the stack from the queue and then after executing it is pop out from the stack. This how
                         the javascript event loop works.
-                        Though this concept is not fully clear to me but I tried to explain it to the best of my
-                        knowledge.
                     </div>
                 </div>
             </div>
@@ -105,19 +109,17 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseThree">
-                        * What is the difference between local storage and session storage?
+                        * How does javascript work?
                     </button>
                 </h2>
                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingThree">
                     <div class="accordion-body">
-                        Local storage and Session storage both are used to store data in web browser. The data stored as
-                        a key-value pair of string. The main difference between local storage and session storage is
-                        session storage stored the data temporarily whereas local storage stored the data permanently.
-                        If a user open a tab in the browser and after finishing the task close the tab then the data
-                        stored in the session storage will be lost. But the data stored in local storage will still
-                        remain in the storage after closing the tab even after closing the browser it will remain there.
-                        And also Local storage has higher memory capacity than session storage.
+                        Javascript is a high-level, single threaded and interpreted language. As it an interpreted
+                        language Javascript code executes line by line. Javascript runs in the
+                        browser using V8 engine. V8 engine uses just-in-time compiler to execute the javascript code.
+                        The just-in-time compiler transform the code into the machine code.
+
                     </div>
                 </div>
             </div>
