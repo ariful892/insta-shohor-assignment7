@@ -57,7 +57,78 @@
             <h1>Reported posts</h1>
         </div>
     </main>
+    <section class="m-5">
+        <h2 class="text-primary text-center">Some core concepts of javascript</h2>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        * How does javascript work?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        Javascript works
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        * What does javascript event loop do?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        Javascript normally executes the operation synchronously. But there are some functions like
+                        fetch, setTimeout, setInterval these are works asynchronously. The javascript event loop handle
+                        all the synchronous and asynchronous operation. If an synchronous statement executes it pushed
+                        in the stack and after executing it pop out from the stack. But when an asynchronous statement
+                        executes it stored in the queue and it waited there untill the response is coming from the
+                        server. In the meantime the further synchronous statement will be execting. When the response is
+                        back to the asynchronous statement that is stored in the queue then it is immediately pushed
+                        into the stack from the queue and then after executing it is pop out from the stack. This how
+                        the javascript event loop works.
+                        Though this concept is not fully clear to me but I tried to explain it to the best of my
+                        knowledge.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        * What is the difference between local storage and session storage?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        Local storage and Session storage both are used to store data in web browser. The data stored as
+                        a key-value pair of string. The main difference between local storage and session storage is
+                        session storage stored the data temporarily whereas local storage stored the data permanently.
+                        If a user open a tab in the browser and after finishing the task close the tab then the data
+                        stored in the session storage will be lost. But the data stored in local storage will still
+                        remain in the storage after closing the tab even after closing the browser it will remain there.
+                        And also Local storage has higher memory capacity than session storage.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer></footer>
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
     <!-- add javascript  file  -->
     <script src="./js/app.js"></script>
